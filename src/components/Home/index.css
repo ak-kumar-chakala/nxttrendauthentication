@@ -1,0 +1,20 @@
+.home-div-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.img-2 {
+  height: 300px;
+  width: 450px;
+}
+
+.shop-now-button {
+  height: 30px;
+  width: 100px;
+  background-color: #0b69ff;
+  color: white;
+  border-radius: 5px;
+  border-width: 0px;
+}
