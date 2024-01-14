@@ -43,3 +43,8 @@
   border-radius: 10px;
   border-width: 0px;
 }
+
+.error-text {
+  color: red;
+  font-size: 14px;
+}

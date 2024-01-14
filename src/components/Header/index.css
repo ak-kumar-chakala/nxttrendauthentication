@@ -10,16 +10,19 @@
 .home {
   margin-right: 15px;
   margin-top: 0px;
+  list-style-type: none;
 }
 
 .products {
   margin-right: 20px;
   margin-top: 0px;
+  list-style-type: none;
 }
 
 .cart {
   margin-right: 20px;
   margin-top: 0px;
+  list-style-type: none;
 }
 
 .button1 {

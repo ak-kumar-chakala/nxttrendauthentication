@@ -6,6 +6,7 @@ class LoginForm extends Component {
   state = {
     userName: '',
     password: '',
+    displayErrorMessage: false,
   }
 
   onChangeUserName = event => {
@@ -33,7 +34,7 @@ class LoginForm extends Component {
     const url = 'https://apis.ccbp.in/login'
 
     const userDetails = {
-      userName,
+      username: userName,
       password,
     }
 
@@ -46,15 +47,25 @@ class LoginForm extends Component {
 
     if (response.ok === true) {
       this.onSubmitSuccess()
+    } else {
+      this.setState({
+        displayErrorMessage: true,
+      })
     }
   }
 
   render() {
+    const {displayErrorMessage} = this.state
+
+    const errorMessage = displayErrorMessage
+      ? "*Username and Password didn't match"
+      : ''
+
     return (
       <div className="login-container">
         <img
           className="login-image"
-          alt="website logo"
+          alt="website login"
           src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-login-img.png"
         />
 
@@ -83,6 +94,7 @@ class LoginForm extends Component {
           <button type="submit" className="login-button">
             Login
           </button>
+          <p className="error-text">{errorMessage}</p>
         </form>
       </div>
     )

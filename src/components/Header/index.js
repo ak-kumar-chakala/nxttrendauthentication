@@ -8,9 +8,9 @@ const Header = () => (
       src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png "
     />
     <div className="btn-container">
-      <p className="home">Home</p>
-      <p className="products">Products</p>
-      <p className="cart">Cart</p>
+      <li className="home">Home</li>
+      <li className="products">Products</li>
+      <li className="cart">Cart</li>
       <button className="button1" type="button">
         Logout
       </button>
